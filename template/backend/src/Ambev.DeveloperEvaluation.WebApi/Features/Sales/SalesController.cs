@@ -47,7 +47,7 @@ public class SalesController : BaseController
         return Created(string.Empty, new ApiResponseWithData<CreateSaleResponse>
         {
             Success = true,
-            Message = "Venda criada com sucesso",
+            Message = "Sale created successfully",
             Data = _mapper.Map<CreateSaleResponse>(result)
         });
     }
@@ -74,7 +74,7 @@ public class SalesController : BaseController
         return Ok(new ApiResponseWithData<GetSaleResponse>
         {
             Success = true,
-            Message = "Venda recuperada com sucesso",
+            Message = "Sale successfully recovered",
             Data = _mapper.Map<GetSaleResponse>(response)
         });
     }
@@ -101,7 +101,7 @@ public class SalesController : BaseController
         return Ok(new ApiResponseWithData<CancelSaleResult>
         {
             Success = true,
-            Message = "Venda cancelada com sucesso",
+            Message = "Sale cancelled successfully",
             Data = result
         });
     }
